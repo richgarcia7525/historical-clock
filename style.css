@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#modern-clock, #historical-clock {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+#modern-time, #histortical-time {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
