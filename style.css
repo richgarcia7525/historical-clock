@@ -7,24 +7,43 @@ body {
     padding: 0;
 }
 
-#app {
+#app-container {
     padding: 20px;
 }
 
 h1 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#modern-clock, #historical-clock {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    display: inline-block;
+/* Dropdown Menu Styling */
+#clock-selector {
+    margin-bottom: 20px;
 }
 
-#modern-time, #histortical-time {
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* Clock Containers */
+#modern-clock, #egyptian-clock-container {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    display: inline-block;
+    width: 300px;
+}
+
+#modern-time, #egyptian-time {
     font-size: 2rem;
     margin-top: 10px;
     font-weight: bold;

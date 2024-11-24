@@ -9,13 +9,26 @@
 <body>
     <div id="app">
         <h1>Historical Time Travel Clock</h1>
-        <div id="moder-clock">
+
+        <!-- Dropdown Menu for Clock Selection -->
+         <div id="clock-selector">
+            <label for="clock-selector">Choose a  clock:</label>
+            <select id="clock-select">
+                <option value="modern">Modern Clock</option>
+                <option valur="egyptian">Egyptian Sundial</option>
+            </select>
+         </div>
+
+         <!-- Modern Clock Section -->
+        <div id="modern-clock-container">
             <h2>Modern Time</h2>
             <div id="modern-time">00:00:00</div>
         </div>
-        <div id="historical-clock">
+
+        <!-- Historical Clock Section -->
+        <div id="egyptian-clock-container" style="display: none;">
             <h2>Egyptian Sundial Time</h2>
-            <div id="historical-time">Loading...</div>
+            <div id="egyptian-time">Loading...</div>
         </div>
     </div>
     <script src="script.js"></script>
