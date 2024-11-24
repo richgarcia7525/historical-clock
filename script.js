@@ -1,3 +1,17 @@
+// Dropdown to select clock
+document.getElementById('clock-select').addEventListener('change', function () {
+    const selectedClock = this.value;
+
+    // Toggle clock display based on selection
+    if (selectedClock === 'modern') {
+        document.getElementById('modern-clock-container').style.display = 'block';
+        document.getElementById('egyptian-clock-container').style.display = 'none';
+    } else if (selectedClock === 'egyptian') {
+        document.getElementById('modern-clock-container').style.display = 'none';
+        document.getElementById('egyptian-clock-container').style.display = 'block';
+    }
+});
+
 // Modern Clock The modern clock directly uses the system time 
 //and splits the day into 24 equal hours. It updates in real-time to show hours,
 // minutes, and seconds.
@@ -23,9 +37,9 @@ function calculateSundialTime() {
     if (now.getHours() >= sunrise && now.getHours() < sunset) {
         const daylightHours = now.getHours() - sunrise + now.getMinutes() / 60;
         egyptianHour = Math.floor((daylightHours / dayLength) * 12) + 1;
-        document.getElementById('historical-time').innerText = `Hour ${egyptianHour} of Daylight`;
+        document.getElementById('egyptian-time').innerText = `Hour ${egyptianHour} of Daylight`;
     } else {
-        document.getElementById('historical-time').innerText = 'Nighttime (No Sundial Time)';
+        document.getElementById('egyptian-time').innerText = 'Nighttime (No Sundial Time)';
     }
 }
 

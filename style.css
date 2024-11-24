@@ -29,7 +29,10 @@ label {
 select {
     font-size: 1.2rem;
     padding: 5px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 /* Clock Containers */
